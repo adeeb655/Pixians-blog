@@ -8,11 +8,10 @@
   <title>Document</title>
 
   <!-- Bootstrap Version 5 Css-->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/js/font-awesome.min.js" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" defer/>
   <link rel="stylesheet" href="assets/css/intlTelInput.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/style.min.css" />
+  <link rel="stylesheet" href="assets/css/responsive.min.css" />
 </head>
 
 <body>
@@ -34,9 +33,6 @@
                         </div>
                         <div>
                           <a class="main-links__item px-0 text-capitalize active" href="work.html">Work</a>
-                        </div>
-                        <div>
-                          <a class="main-links__item px-0 text-capitalize active" href="#">Services</a>
                         </div>
                         <div>
                           <a class="main-links__item px-0 text-capitalize active" href="#">Projects</a>
@@ -69,7 +65,7 @@
                           <a href="contact-us.html">Contact Us</a>
                         </div>
                       </div>
-                      <div class="social-links d-block">
+                      <div class="social-links d-md-block d-none">
                         <a href="#"><img src="./assets/img/icons/facebook-icon.svg" class="img-fluid" alt="" /></a>
                         <a href="#"><img src="./assets/img/icons/instagram-icon.svg" class="img-fluid" alt="" /></a>
                         <a href="#"><img src="./assets/img/icons/linkedln-icon.svg" class="img-fluid" alt="" /></a>
@@ -134,9 +130,6 @@
                         <a class="nav-link" href="index.html">Process</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                      </li>
-                      <li class="nav-item">
                         <a class="nav-link hvr-line" href="contact-us.html">Let’s talk</a>
                       </li>
                     </ul>
@@ -170,12 +163,11 @@
                 </svg>
               </span>
               to a<br />tested <span class="blue">Prototype</span><span class="idea">
-                <svg viewBox="0 0 72 72" fill="none">
+                <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
                   <path
                     d="M47.8125 9H24.1875C22.8448 9 21.5572 9.53337 20.6078 10.4828C19.6584 11.4322 19.125 12.7198 19.125 14.0625V57.9375C19.125 59.2802 19.6584 60.5678 20.6078 61.5172C21.5572 62.4666 22.8448 63 24.1875 63H47.8125C49.1552 63 50.4428 62.4666 51.3922 61.5172C52.3416 60.5678 52.875 59.2802 52.875 57.9375V14.0625C52.875 12.7198 52.3416 11.4322 51.3922 10.4828C50.4428 9.53337 49.1552 9 47.8125 9V9ZM36 59.625C35.5574 59.6247 35.1192 59.5372 34.7103 59.3676C34.3015 59.1979 33.9301 58.9494 33.6174 58.6362C32.9857 58.0037 32.6312 57.1462 32.6317 56.2523C32.632 55.8096 32.7195 55.3714 32.8892 54.9626C33.0588 54.5538 33.3073 54.1824 33.6205 53.8696C34.2531 53.2379 35.1106 52.8834 36.0045 52.884C36.8984 52.8846 37.7555 53.2403 38.3871 53.8728C39.0188 54.5053 39.3733 55.3628 39.3727 56.2568C39.3722 57.1507 39.0165 58.0077 38.384 58.6394C37.7514 59.2711 36.8939 59.6256 36 59.625H35.9977H36Z"
                     fill="#FFD31B" />
-                </svg> </span><br />
-              in 5 days.
+                </svg> </span>
             </h2>
             <p class="sub-heading" data-custom="fade-up">
               Masterpieces are always crafted with undying passion, a dash of
@@ -186,7 +178,7 @@
       </div>
     </section>
 
-    <section class="discover-and-explore head-space">
+    <section class="discover-and-explore">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-12" data-custom="fade-up">
@@ -195,11 +187,11 @@
             </h2>
             <p class="text">
               By connecting with the users and their environment at a
-              fundamental level, we help teams discover the most relevant
+              fundamental level, we help you discover the most relevant
               opportunities for their products and services.
             </p>
             <div class="discoverExploreImg" data-custom="fade-up-right">
-              <img src="./assets/img/discoverAndExplore.png" alt="discoverAndExplore" class="img-fluid" />
+              <img src="./assets/img/discoverAndExplore.png" alt="discoverAndExplore" loading="lazy" class="img-fluid" />
             </div>
           </div>
           <div class="col-md-6 col-12 mt-auto">
@@ -216,16 +208,16 @@
               <div class="box-scroll">
                 <h3 class="sub-heading">Identify</h3>
                 <p class="text">
-                  Through qualitative research, we understand their beliefs &
-                  mental models to identify opportunities.
+                  Through qualitative research, we understand users
+                  beliefs & mental models to identify opportunities.
                 </p>
               </div>
 
               <div class="box-scroll">
                 <h3 class="sub-heading">Prioritise</h3>
                 <p class="text">
-                  We then prioritise on creating effective & pragmatic
-                  possibilities around the identified opportunities.
+                  Next step is to prioritize creating effecting & pragmatic possibilities around the identified
+                  opportunities.
                 </p>
               </div>
               <div class="points-holder pointsImg">
@@ -245,11 +237,11 @@
               Strategise & <span class="blue">Conceptualise</span>
             </h2>
             <p class="text">
-              Armed with research insights, we strategise on the key user
-              flows, information architecture & product roadmap.
+              Armed with research insights, we strategise on the key User Flows, Informations Architecture, & Product
+              Roadmap.
             </p>
             <div class="discoverExploreImg" data-custom="fade-up-left">
-              <img src="./assets/img/strategiseAndConceptualise.png" alt="strategiseAndConceptualise"
+              <img src="./assets/img/strategiseAndConceptualise.png" alt="strategiseAndConceptualise" loading="lazy"
                 class="img-fluid" />
             </div>
           </div>
@@ -258,16 +250,14 @@
               <div class="box-scroll">
                 <h3 class="sub-heading">Problem Statement</h3>
                 <p class="text">
-                  We help teams define key problems & identify success metrics
-                  that help us measure outcomes effectively.
+                  We help you define key problems & identify success metrics that help us measure outcomes effectively.
                 </p>
               </div>
 
               <div class="box-scroll">
                 <h3 class="sub-heading">Key User Flows</h3>
                 <p class="text">
-                  We map out the key user journeys of the product that are the
-                  core of the product experience.
+                  We map out the key user journeys of the product that is the core of the product experience.
                 </p>
               </div>
 
@@ -298,7 +288,7 @@
               This stage focuses on creating & crafting the product
             </p>
             <div class="discoverExploreImg" data-custom="fade-up-right">
-              <img src="./assets/img/CreateAndValidate.png" alt="CreateAndValidate" class="img-fluid" />
+              <img src="./assets/img/CreateAndValidate.png" alt="CreateAndValidate" loading="lazy" class="img-fluid" />
             </div>
           </div>
           <div class="col-md-6 col-12 mt-auto">
@@ -342,11 +332,10 @@
           <div class="col-md-6 col-12 order-md-2 order-1" data-custom="fade-up">
             <h2 class="heading">Develop & <span class="blue">Test</span></h2>
             <p class="text">
-              We will help a client's problems to develop the products they
-              have with high quality
+              We will assist the client in resolving his issue by developing high-quality products.
             </p>
             <div class="discoverExploreImg" data-custom="fade-up-left">
-              <img src="./assets/img/developAndTest.png" alt="developAndTest" class="img-fluid" />
+              <img src="./assets/img/developAndTest.png" alt="developAndTest" loading="lazy" class="img-fluid" />
             </div>
           </div>
           <div class="col-md-6 col-12 order-md-1 order-2 mt-auto">
@@ -370,8 +359,8 @@
               <div class="box-scroll">
                 <h3 class="sub-heading">Cross-Platform Testing</h3>
                 <p class="text">
-                  Multi-device & platform testing ensures that the final
-                  product works seamlessly across devices.
+                  Multi-device & platform testing ensures that
+                  the final product works seamlessly across all of your devices
                 </p>
               </div>
               <div class="points-holder pointsImg">
@@ -385,7 +374,7 @@
 
     <footer>
       <section class="footer-main" id="main-footer">
-        <img src="./assets/img/footer-side-icon.png" class="footer-icons-img" alt="" />
+        <img src="./assets/img/footer-side-icon.png" loading="lazy" class="footer-icons-img" alt="" />
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -393,18 +382,18 @@
             </div>
             <div class="col-lg-6 col-md-5 col-12 space-box order-2 order-md-1">
               <div class="space-img">
-                <img src="./assets/img/logos/pixians-footer-logo.png" class="img-fluid" alt="" />
+                <img src="./assets/img/logos/pixians-footer-logo.png" loading="lazy" class="img-fluid" alt="" />
               </div>
               <p class="text">
-                Challenge us. We want to work with you to create with really
+                Challenge us. We want to work with you to create really
                 cool stuff.
               </p>
               <div class="footer-box">
-                <a href="#"><img src="./assets/img/icons/facebook.svg" class="img-fluid" alt="" /></a>
-                <a href="#"><img src="./assets/img/icons/instagram.svg" class="img-fluid" alt="" /></a>
-                <a href="#"><img src="./assets/img/icons/linkedln.svg" class="img-fluid" alt="" /></a>
-                <a href="#"><img src="./assets/img/icons/behance.svg" class="img-fluid" alt="" /></a>
-                <a href="#"><img src="./assets/img/icons/dribble.svg" class="img-fluid" alt="" /></a>
+                <a href="#"><img src="./assets/img/icons/facebook.svg" loading="lazy" class="img-fluid" alt="" /></a>
+                <a href="#"><img src="./assets/img/icons/instagram.svg" loading="lazy" class="img-fluid" alt="" /></a>
+                <a href="#"><img src="./assets/img/icons/linkedln.svg" loading="lazy" class="img-fluid" alt="" /></a>
+                <a href="#"><img src="./assets/img/icons/behance.svg" loading="lazy" class="img-fluid" alt="" /></a>
+                <a href="#"><img src="./assets/img/icons/dribble.svg" loading="lazy" class="img-fluid" alt="" /></a>
               </div>
               <div class="footer-policy-box">
                 <a href="#">
@@ -466,7 +455,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
 
-  <script src="assets/js/font-awesome.min.js"></script>
   <script src="assets/js/intlTelInput.js"></script>
 
   <script src="assets/js/main.js"></script>

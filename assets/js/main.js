@@ -1,10 +1,10 @@
-
 var input = document.querySelector("#phone");
-window.intlTelInput(input, {
-  separateDialCode: true,
-  utilsScript: "assets/js/utils.js",
-});
-
+if (input) {
+  window.intlTelInput(input, {
+    separateDialCode: true,
+    utilsScript: "assets/js/utils.js",
+  });
+}
 
 $(document).ready(function () {
   setTimeout(function () {
@@ -65,56 +65,62 @@ $("#show-all").click(function () {
   $(".post").addClass("active");
 });
 
-// register the plugin:
-gsap.registerPlugin(ScrollTrigger);
-let boxArr = gsap.utils.toArray(".box-scroll");
-boxArr.forEach((item, index) => {
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".box-scroll",
-      start: "top 90%",
-      toggleActions: "restart none none reset",
-      end: "bottom 90%",
-      trigger: item,
-    },
+if ($(".box-scroll").length > 0) {
+  // register the plugin:
+  gsap.registerPlugin(ScrollTrigger);
+  let boxArr = gsap.utils.toArray(".box-scroll");
+  boxArr.forEach((item, index) => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".box-scroll",
+        start: "top 90%",
+        toggleActions: "restart none none reset",
+        end: "bottom 90%",
+        trigger: item,
+      },
+    });
+    tl.from(item, {
+      opacity: 0,
+      y: 60,
+    });
   });
-  tl.from(item, {
-    opacity: 0,
-    y: 60,
-  });
-});
+}
 
-let lineArr = gsap.utils.toArray(".svg-Line");
-lineArr.forEach(element => {
-  console.log(element);
-  let tl2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".timeLine",
-      start: "top 75%",
-      end: "bottom 10%",
-      scrub: true,
-      trigger: element,
-    },
+if ($(".svg-Line").length > 0) {
+  let lineArr = gsap.utils.toArray(".svg-Line");
+  lineArr.forEach((element) => {
+    console.log(element);
+    let tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".timeLine",
+        start: "top 75%",
+        end: "bottom 10%",
+        scrub: true,
+        trigger: element,
+      },
+    });
+    tl2.to(element, {
+      height: "100%",
+      ease: "none",
+      duration: 3,
+    });
   });
-  tl2.to(element, {
-    height: "100%",
-    ease: "none",
-    duration: 3,
-  });
-});
+}
 
-const boxes = gsap.utils.toArray(`[data-custom="fade-up"]`);
-boxes.forEach((box, i) => {
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: box,
-      toggleActions: "restart none none reset",
-      once: true
-    }
+if ($(`[data-custom="fade-up"]`).length > 0) {
+  const boxes = gsap.utils.toArray(`[data-custom="fade-up"]`);
+  boxes.forEach((box, i) => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: box,
+        toggleActions: "restart none none reset",
+        once: true,
+      },
+    });
+    tl.from(box, {
+      opacity: 0,
+      duration: 0.5,
+      y: 100,
+    });
   });
-  tl.from(box, {
-    opacity: 0,
-    duration: 0.5,
-    y: 100,
-  });
-});
+}

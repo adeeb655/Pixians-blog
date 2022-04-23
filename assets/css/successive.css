@@ -193,7 +193,7 @@ header .navbar-nav .nav-item .hvr-line::after {
   width: 25%;
   height: 1px;
   background: rgba(24, 90, 210, 0.9);
-  transition: all .6s cubic-bezier(0,0,.23,1);
+  transition: all 0.6s cubic-bezier(0, 0, 0.23, 1);
 }
 
 header .navbar-nav a.hvr-line::after {
@@ -305,8 +305,7 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   padding: 84.5px 20px;
-  width: 364px;
-  height: 355px;
+  height: 100%;
 }
 
 .project-goals .goalsBox .num {
@@ -391,11 +390,14 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
 .our-timeline .timelineBox {
   padding: 20px;
   margin-top: 12px;
+  position: relative;
 }
 
 .our-timeline .timelineBox .box {
   position: absolute;
   width: 230px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .our-timeline .timelineBox .content {
@@ -424,10 +426,10 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
 }
 
 .our-timeline .dotted-line {
-  position: absolute;
+  /* position: absolute; */
   border: 1px dashed #000000;
-  width: 1142px;
   height: 62px;
+  margin-bottom: -60px;
 }
 
 /* discoveAndExplore */
@@ -677,7 +679,7 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
 }
 
 .hifi_bG {
-  background-image: url("/assets/img/hi-fi_UiDesign.jpg");
+  background-image: url("../img/hi-fi_UiDesign.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: 735px;
@@ -967,6 +969,9 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
   line-height: 26px;
   color: #ffffff;
   margin-right: 16px;
+  /* add margin bottom so icons do not overlap */
+  display: inline-block;
+  margin-bottom: 8px;
 }
 
 .desktop-menu__blackbg .desktop-menu__item .bg-bl-hd {
@@ -991,10 +996,6 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
   color: #2c69df;
 }
 
-header .navbar-nav .nav-item:last-child{
-  margin-right: 60px;
-}
-
 .the-mega-btn {
   position: absolute;
   right: 15px;
@@ -1005,14 +1006,14 @@ header .navbar-nav .nav-item:last-child{
   cursor: pointer;
 }
 
-.the-mega-btn .l1{
+.the-mega-btn .l1 {
   width: 15px;
   height: 1.5px;
   background-color: #2c69df;
   transition: all 0.3s;
 }
 
-.the-mega-btn .l2{
+.the-mega-btn .l2 {
   width: 15px;
   height: 2px;
   background-color: #2c69df;
@@ -1020,18 +1021,18 @@ header .navbar-nav .nav-item:last-child{
   transition: all 0.3s;
 }
 
-.the-mega-btn.active .l1{
+.the-mega-btn.active .l1 {
   transform: rotate(45deg);
   width: 20px;
 }
 
-.the-mega-btn.active .l2{
+.the-mega-btn.active .l2 {
   transform: rotate(-45deg);
   width: 20px;
   margin-top: -2px;
 }
 
-.the-mega-btn.fixed{
+.the-mega-btn.fixed {
   position: fixed;
   top: 7%;
   right: 50px;
@@ -1045,7 +1046,7 @@ header .navbar-nav .nav-item:last-child{
   width: 0;
   height: 1px;
   background-color: #fff;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .hvr-div a:hover:before {
@@ -1060,7 +1061,7 @@ header .navbar-nav .nav-item:last-child{
   width: 0;
   height: 1px;
   background-color: #fff;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .hvr-m a:hover:before {
@@ -1147,129 +1148,141 @@ header .navbar-nav .nav-item:last-child{
   }
 
   .our-timeline .timelineBox .box {
-    width: 180px;
+    width: 160px;
   }
 
   .our-timeline .timelineBox .content {
     font-size: 14px;
+    padding: 10px 8px;
   }
 
-  .discoverAndExplore .text br{
+  .our-timeline .timelineBox .text {
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .our-timeline .timelineBox .sub-heading {
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+
+  .discoverAndExplore .text br {
     display: none;
   }
 
-  .discoverAndExplore .main-heading{
+  .discoverAndExplore .main-heading {
     font-size: 26px;
   }
 
-  .discoverAndExplore .main-heading br{
+  .discoverAndExplore .main-heading br {
     display: none;
   }
 
-  .discoverAndExplore .btn{
+  .discoverAndExplore .btn {
     font-size: 16px;
   }
 
-  .discoverAndExplore .content{
+  .discoverAndExplore .content {
     margin-top: 50px;
     font-size: 24px;
     line-height: 36px;
   }
 
-  .discoverAndExplore .content br{
+  .discoverAndExplore .content br {
     display: none;
   }
 
-  .discoverAndExplore .content::before{
+  .discoverAndExplore .content::before {
     left: 45%;
     margin-top: 125px;
   }
 
-  .strategies .box{
+  .strategies .box {
     padding: 10px;
   }
 
-  .strategies .text{
+  .strategies .text {
     font-size: 20px;
   }
 
-  .strategies .sub-heading{
+  .strategies .sub-heading {
     font-size: 20px;
   }
 
-  .strategies .strategiesBox .text br{
+  .strategies .strategiesBox .text br {
     display: none;
   }
 
-  .strategies .strategiesBox ul li{
+  .strategies .strategiesBox ul li {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 5px;
   }
 
-  .strategies .strategiesBox .text{
+  .strategies .strategiesBox .text {
     font-size: 16px;
   }
 
-  .wireframing .text br{
+  .wireframing .text br {
     display: none;
   }
 
-  .guidelines .box{
+  .guidelines .box {
     width: 160px;
     height: 190px;
     padding: 15px;
   }
 
-  .guidelines .box .sub-heading{
+  .guidelines .box .sub-heading {
     font-size: 18px;
     line-height: 30px;
   }
 
-  .typefaces .box{
+  .typefaces .box {
     padding: 15px;
     width: 160px;
     height: 240px;
   }
 
-  .typefaces .heading{
+  .typefaces .heading {
     font-size: 22px;
     line-height: 40px;
   }
 
-  .typefaces .text{
+  .typefaces .text {
     font-size: 20px;
     line-height: 28px;
   }
 
-  .typefaces .box .sm-text{
+  .typefaces .box .sm-text {
     font-size: 18px;
     line-height: 28px;
   }
 
-  .hifi_bG{
+  .hifi_bG {
     background-position: center;
     background-size: 100% 100%;
   }
 
-  .impact .box{
+  .impact .box {
     padding: 15px;
   }
 
-  .impact .box .sub-heading{
+  .impact .box .sub-heading {
     font-size: 28px;
     line-height: 30px;
   }
 
-  .impact .box .text{
+  .impact .box .text {
     font-size: 40px;
   }
 
-  .thankyou .content{
+  .thankyou .content {
     font-size: 120px;
   }
 
-  .thankyou{
+  .thankyou {
     background-position: center;
     background-size: 100% 100%;
     height: 350px;
@@ -1371,7 +1384,7 @@ header .navbar-nav .nav-item:last-child{
 
   .navbar-brand {
     margin-right: 0;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .navbar-nav {
@@ -1418,12 +1431,15 @@ header .navbar-nav .nav-item:last-child{
     padding-top: 0;
   }
 
-  .the-mega-btn.active .l1, .the-mega-btn.active .l2{
+  .the-mega-btn.active .l1,
+  .the-mega-btn.active .l2 {
     background-color: #fff;
   }
 
   .the-mega-btn {
     top: 30px;
+    right: 30px;
+    position: fixed;
   }
 
   .sub-heading {
@@ -1445,7 +1461,7 @@ header .navbar-nav .nav-item:last-child{
 
   .our-timeline .text {
     margin-bottom: 0px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 26px;
     text-align: center;
   }
@@ -1510,7 +1526,7 @@ header .navbar-nav .nav-item:last-child{
   }
 
   .our-timeline .timelineBox {
-    padding: 20px;
+    padding: 10px;
     margin: 0px 10px;
     background-color: #fff;
   }

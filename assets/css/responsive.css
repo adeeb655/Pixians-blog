@@ -21,7 +21,7 @@
 
   .navbar-brand {
     margin-right: 0;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .navbar-nav {
@@ -75,6 +75,8 @@
 
   .the-mega-btn {
     top: 30px;
+    right: 30px;
+    position: fixed;
   }
 
   .main-heading {
@@ -101,6 +103,10 @@
   }
 
   /* our-process */
+  .our-process {
+    padding: 40px 0;
+  }
+
   .our-process svg {
     width: 50px;
     height: 50px;
@@ -121,7 +127,7 @@
   .discover-and-explore .heading {
     text-align: center;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 0px;
     font-weight: 900;
     font-size: 22px;
     line-height: 30px;
@@ -158,7 +164,15 @@
 
   /* blogs */
   .blogs .blog-box {
-    margin-top: 40px;
+    margin-top: 0px;
+  }
+
+  .new-blog .blog-box {
+    margin-top: 60px;
+  }
+
+  .new-blog .blog-box.first1 {
+    margin-top: 0;
   }
 
   .blogs .blog-box .content {
@@ -274,6 +288,11 @@
 
   .sprint-roadmap .sprint-roadmap-wrapper {
     margin: 20px 70px;
+    width: auto;
+  }
+
+  .sprint-roadmap.head-space {
+    margin-top: 0;
   }
 
   .wrapperBox .box::before {
@@ -284,12 +303,16 @@
     right: 100px;
   }
 
-  .wrapperBox .box span {
-    right: 110px;
-  }
-
   .sprint-roadmap .sub-heading {
     margin-top: 30px;
+  }
+
+  .sprint--box {
+    right: 80px;
+  }
+
+  .sprint-roadmap .sm-text {
+    padding-right: 0;
   }
 
   /* design-sprint */
@@ -334,6 +357,12 @@
     line-height: 22px;
     font-weight: 900;
     text-align: center;
+  }
+
+  /* discover */
+
+  .discover-and-explore.new-sprint {
+    padding-top: 40px;
   }
 
   /* work */
@@ -469,15 +498,835 @@
   }
 
   /* contact-us */
-  .page-banner {
+
+  .contact-info .contact-box {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .contact-info .contact-box .sub-heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  /* konnect case study */
+
+  /* konnect-banner  */
+
+  .banner.konnect-banner .box {
+    text-align: center;
+  }
+
+  .banner.konnect-banner .sub-heading {
+    text-align: center;
+  }
+
+  .banner.konnect-banner .header-icons {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .banner.konnect-banner .header-icons .iconBox {
+    margin-top: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .banner.konnect-banner .header-icons .iconBox .icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .banner.konnect-banner .header-icons .iconBox .content {
+    padding-left: 15px;
+  }
+
+  .banner.konnect-banner .header-icons .iconBox .content p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .banner.konnect-banner .header-icons .iconBox .content h3 {
+    font-size: 16px;
+    line-height: 25px;
+    white-space: nowrap;
+  }
+
+  .banner.konnect-banner .sub-heading {
+    margin-bottom: 0px;
+  }
+
+  .banner.konnect-banner {
+    height: auto;
+    overflow: hidden;
+  }
+
+  .banner.konnect-banner .box {
+    margin-top: 0px;
+  }
+
+  .banner.konnect-banner .box img {
+    width: 195px;
+  }
+
+  .banner.konnect-banner .banner-img {
+    position: relative;
+    min-width: 105%;
+    right: 7px;
+    z-index: 5;
+    top: 25px;
+  }
+
+  .banner.konnect-banner {
+    position: relative;
+  }
+
+  .banner.konnect-banner .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .banner.konnect-banner .circle img {
+    width: 70px;
+  }
+
+  /* code */
+
+  .head-space {
+    margin-top: 40px;
+  }
+
+  .konnect-app .sub-heading {
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 10px;
+  }
+
+  .konnect-app .text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .konnect-app .text br {
+    display: none;
+  }
+
+  .konnect_brief {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .konnect_brief .goals_Box {
+    margin-top: 60px;
+  }
+
+  .konnect-app .image1 img {
+    width: 100px;
+  }
+
+  .konnect-app .image2 img {
+    width: 80px;
+  }
+
+  .konnect-action .box {
+    margin-top: 40px;
+  }
+
+  .konnect-action .box .text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .konnect-design-system .design-system-image3 img {
+    width: 50px;
+  }
+
+  .konnect-design-system .text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .konnect-design-system .text br {
+    display: none;
+  }
+
+  .konnect-design-system .box {
+    margin-top: 20px;
+  }
+
+  .konnect-color {
+    padding-bottom: 40px;
+  }
+
+  .konnect-color .heading {
+    margin-bottom: 0.5rem;
+  }
+
+  .konnect-color .text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .konnect-color .text br {
+    display: none;
+  }
+
+  .konnect-color .color-image img {
+    width: 70px;
+  }
+
+  .konnect-color .color-image2 {
+    display: none;
+  }
+
+  .konnect-color .col {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+
+  .konnect-color .col.a {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .konnect-color .box .sub-heading {
+    margin-top: 20px;
+  }
+
+  .konnect-icon .icon-image1 img {
+    width: 60px;
+  }
+
+  .konnect-icon .icon-image2 img {
+    width: 50px;
+  }
+
+  .konnect-icon .icon-image7 img {
+    width: 30px;
+  }
+
+  .konnect-icon .text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .konnect-icon .text br {
+    display: none;
+  }
+
+  .konnect-ui-design .text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .konnect-ui-design .text br {
+    display: none;
+  }
+
+  .konnect-key-screens .key-screens-icon1 {
+    display: none;
+  }
+
+  .konnect-key-screens .key-screens-icon2 {
+    width: 50px;
+  }
+
+  .konnect-key-screens .key-screens-icon3 {
+    display: none;
+  }
+
+  .konnect-key-screens .text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .konnect-key-screens .text br {
+    display: none;
+  }
+
+  .konnect-key-screens .box {
+    margin-top: 40px;
+  }
+
+  .konnect-key-screens .key-box {
+    padding: 30px 30px 30px 25px;
+  }
+
+  .konnect-key-screens .groupimgecircle {
+    display: none;
+  }
+
+  .konnect-reminder .box {
+    margin-top: 40px;
+  }
+
+  .konnect-reminder .box .text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .konnect-reminder .key-box {
+    padding: 40px 25px 25px 30px;
+  }
+
+  .konnect-reminder .key-box .text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .konnect-reminder .key-box .text br {
+    display: none;
+  }
+
+  .konnect-thank-you .head {
+    font-size: 55px;
+    line-height: 34px;
+    margin-top: 0;
+  }
+
+  .thank-you-image1 {
+    display: none;
+  }
+
+  .thank-you-image2 {
+    display: none;
+  }
+
+  .konnect-thank-you {
     height: 300px;
   }
 
-  .contact-info .contact-box {
-    margin-bottom: 50px;
+  /* tio case study */
+
+  /* tio-banner  */
+
+  .banner.tio-banner .box .head {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
   }
 
-  /*  */
+  .banner.tio-banner .box .content {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .banner.tio-banner .header-icons {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .banner.tio-banner .header-icons .iconBox {
+    margin-top: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 15px;
+  }
+
+  .banner.tio-banner .header-icons .iconBox .icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .banner.tio-banner .header-icons .iconBox .content {
+    padding-left: 15px;
+  }
+
+  .banner.tio-banner .header-icons .iconBox .content p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .banner.tio-banner .header-icons .iconBox .content h3 {
+    font-size: 16px;
+    line-height: 25px;
+    white-space: nowrap;
+  }
+
+  .banner.tio-banner .sub-heading {
+    margin-bottom: 0px;
+  }
+
+  .banner.tio-banner {
+    height: auto;
+    overflow: hidden;
+  }
+
+  .banner.tio-banner .box {
+    margin-top: 0px;
+  }
+
+  .banner.tio-banner .banner-img {
+    position: relative;
+    min-width: 105%;
+    right: 7px;
+    z-index: 5;
+    top: 25px;
+  }
+
+  .banner.tio-banner {
+    position: relative;
+    border-radius: 0 0 50px 50px;
+  }
+
+  /* tio - code */
+
+  .tio-objective .text-16 br {
+    display: none;
+  }
+
+  .tio-objective .box .content {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .tio-goal .text-16 br {
+    display: none;
+  }
+
+  .tio-persona .persona-box {
+    padding: 40px 10px;
+  }
+
+  .tio-persona .box .sub-heading {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .tio-persona .persona-box .box-4 {
+    margin-top: 40px;
+  }
+
+  .tio-typography {
+    margin: 10px;
+  }
+
+  .tio-typography .typography-left-section h2 {
+    padding-top: 0;
+  }
+
+  .tio-typography .typography-left-section p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .tio-typography .typography-left-section p br {
+    display: none;
+  }
+
+  .tio-typography .typography-right-section h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 72px;
+  }
+
+  .tio-typography .typography-left-section h3 {
+    padding-top: 0;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .tio-typography .word-pattern {
+    text-align: left;
+  }
+
+  .tio-typography .black-text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .tio-typography .bold-text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .tio-typography .medium-text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .tio-typography .regular-text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .tio-typography .alphabet-pattern p {
+    font-size: 16px;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .tio-typography .mix-pattern p {
+    font-size: 16px;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .tio-color .text-16 br {
+    display: none;
+  }
+
+  .tio-color .col-6.a {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .tio-low-fid-wireframe .text-16 {
+    margin-bottom: 0;
+  }
+
+  .tio-low-fid-wireframe .box {
+    margin-top: 10px;
+  }
+
+  .tio-mid-fid-wireframe .head-space {
+    margin-top: 0;
+  }
+
+  .tio-mid-fid-wireframe .box {
+    margin-top: 20px;
+  }
+
+  .tio-mid-fid-wireframe .col-6.a {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .tio-mid-fid-wireframe .col-6.a .box img {
+    width: 50%;
+  }
+
+  .tio-thankyou .box {
+    height: 150px;
+  }
+
+  .tio-thankyou .head {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  /* smartFarm case study */
+
+  .smart-objective .heading br {
+    display: none;
+  }
+
+  .smart-objective .text-16 br {
+    display: none;
+  }
+
+  .smart-delivery .heading {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .smart-delivery .heading br {
+    display: none;
+  }
+
+  .smart-technology-used .heading {
+    text-align: center;
+  }
+
+  .smart-technology-used .box .text-16 br {
+    display: none;
+  }
+
+  .smart-challenges .box {
+    margin: 5px;
+    padding: 30px;
+  }
+
+  .smart-challenges .heading {
+    text-align: center;
+  }
+
+  .smart-challenges .challenges-img {
+    margin-top: 20px;
+  }
+
+  .smart-design-pipeline .sub-heading{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .smart-design-pipeline .heading {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .smart-design-pipeline ul li {
+    padding-right: 15px;
+  }
+
+  .smart-design-pipeline .box {
+    padding-left: 0;
+    margin-top: 45px;
+  }
+
+  .smart-design-pipeline .linear-grad {
+    width: 0px;
+    height: 100%;
+    margin-left: auto;
+  }
+
+  .smart-design-pipeline .box::before {
+    left: -45px;
+    top: 0;
+  }
+
+  .smart-design-pipeline .imageboxx {
+    top: -40px;
+  }
+
+  .smart-design-pipeline .box .heading {
+    margin-top: 40px;
+  }
+
+  .smart-design-pipeline {
+    padding-bottom: 0;
+  }
+
+  .smart-discover .head {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .smart-discover .box {
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  .smart-discover .sub-heading {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .smart-discover .smart-box img {
+    width: 150px;
+  }
+
+  .smart-discover .circle img {
+    width: 100px;
+  }
+
+  .smart-discover .side-circle img {
+    display: none;
+  }
+
+  .smart-user-persona .head {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .smart-ideate .head {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .smart-solution .head {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .smart-low-fidelity .head {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .smart-low-fidelity .half-circle {
+    top: auto;
+    bottom: 0;
+  }
+
+  .smart-low-fidelity .half-circle img {
+    width: 50px;
+  }
+
+  .smart-mid-fidelity .half-circle {
+    top: 0;
+  }
+
+  .smart-mid-fidelity .half-circle img {
+    width: 100px;
+  }
+
+  .smart-mid-fidelity .head {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .smart-visual-design {
+    height: 500px;
+  }
+
+  .smart-visual-design .box img {
+    left: 0;
+  }
+
+  .smart-visual-design .content-box {
+    margin-left: 0;
+    margin-top: 80%;
+  }
+
+  .smart-visual-design .head {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .smart-high-fidelity .head {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .smart-high-fidelity .content-box {
+    margin-left: 0;
+  }
+
+  .smart-high-fidelity .content-box .content {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .smart-high-fidelity .content--box .content {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .smart-high-fidelity .head br {
+    display: none;
+  }
+
+  .smart-solution .content-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .smart-solution .num {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .smart-solution .arrow-img {
+    top: -30%;
+    left: 10%;
+    transform: rotate(90deg);
+    transform-origin: left;
+  }
+
+  .smart-solution .head-space:nth-child(3) .num {
+    padding-left: 0;
+    text-align: right;
+  }
+
+  .smart-solution .content .head br {
+    display: none;
+  }
+
+  .smart-solution .arrow-img2 {
+    top: 20%;
+    left: 10%;
+    transform: rotate(-90deg);
+    transform-origin: left;
+  }
+
+  .smart-project-impact .box {
+    width: 50%;
+    float: left;
+  }
+
+  .smart-project-impact .box .num {
+    left: 0;
+    width: 29px;
+    height: 29px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .smart-project-impact .box.aa {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .smart-project-impact .box.bb {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .smart-project-impact .box.cc {
+    margin-left: 0;
+  }
+
+  .smart-project-impact .box.dd {
+    margin-left: 0;
+  }
+
+  .smart-project-impact .box.ee {
+    margin-left: 0;
+  }
+
+  .smart-project-impact .xs-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .smart-project-impact .xs-text br {
+    display: none;
+  }
+
+  .smart-project-impact .content--box {
+    margin-bottom: 25px;
+  }
+
+  .smart-project-impact .impact--box::before{
+    display: none;
+  }
+
+  .smart-project-impact .impact--box{
+    margin-left: 0;
+  }
+
+  .smart-project-impact .content--box{
+    display: block;
+  }
+
+  .smart-thank-you .head {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -572,15 +1421,6 @@
     padding: 0 1px 0 1px;
   }
 
-  /* .iti--allow-dropdown input,
-  .iti--allow-dropdown input[type="text"],
-  .iti--allow-dropdown input[type="tel"],
-  .iti--separate-dial-code input,
-  .iti--separate-dial-code input[type="text"],
-  .iti--separate-dial-code input[type="tel"] {
-    padding-left: 70px;
-  } */
-
   .footer-box a {
     margin-right: 5px;
   }
@@ -597,9 +1437,9 @@
   }
 
   .sprint-roadmap .wrapperBox {
-    margin-left: 70px;
+    margin-left: 10px;
     margin-bottom: 30px;
-    margin-right: 70px;
+    margin-right: 10px;
   }
 
   /* design-sprint */
@@ -655,17 +1495,386 @@
 
   /* contact-us */
 
+  .contact-info .contact-box {
+    margin-bottom: 40px;
+  }
+
   .contact-info .contact-box .contact-desc {
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
   .contact-info .contact-box .sub-heading {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
-  .contact-info .contact-box .sm-text {
+  /* konnect */
+
+  .banner {
+    height: 550px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .sub-heading {
+    font-size: 18px;
+  }
+
+  .konnect-app .text br {
+    display: none;
+  }
+
+  .konnect_brief .goals_Box .text {
+    padding: 0 4px;
+  }
+
+  .konnect-action .heading {
+    margin-bottom: 40px;
+  }
+
+  .konnect-action .box .heading {
+    margin-bottom: 10px;
+  }
+
+  .konnect-icon .icon-image1 {
+    display: none;
+  }
+
+  .konnect-icon .icon-image7 {
+    width: 30px;
+  }
+
+  .konnect-design-system .design-system-image3 img {
+    width: 80px;
+  }
+
+  .konnect-key-screens .key-screens-icon1 {
+    width: 30px;
+  }
+
+  .konnect-key-screens .key-box {
+    padding: 25px 20px;
+  }
+
+  .konnect-key-screens .marginSpace {
+    margin-top: 50px;
+  }
+
+  .konnect-key-screens .groupimgecircle2 {
+    display: none;
+  }
+
+  .konnect-reminder .key-box {
+    padding: 25px 20px;
+  }
+
+  .konnect-reminder .key-box .text br {
+    display: none;
+  }
+
+  .konnect-thank-you .head {
+    font-size: 60px;
+  }
+
+  .thank-you-image1 img {
+    width: 100px;
+  }
+
+  /* tio case study */
+
+  .banner.tio-banner {
+    height: 440px;
+  }
+
+  .banner.tio-banner .banner-img {
+    min-width: 400px;
+    right: -20px;
+    top: -70px;
+  }
+
+  .banner.tio-banner .box {
+    margin-top: 0;
+  }
+
+  .banner.tio-banner .box .head {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .banner.tio-banner .box .content {
+    margin-top: 20px;
+  }
+
+  .banner.tio-banner .header-icons .iconBox {
+    margin-top: 20px;
+  }
+
+  .tio-objective .text-16 br {
+    display: none;
+  }
+
+  .tio-objective .box .content {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .tio-goal .text-16 br {
+    display: none;
+  }
+
+  .tio-persona .persona-box .box-2 {
+    margin-top: 20px;
+  }
+
+  .tio-persona .persona-box .box-4 {
+    margin-top: 40px;
+  }
+
+  .tio-typography .typography-left-section p {
+    font-size: 18px;
+  }
+
+  .tio-typography .typography-right-section h2 {
+    font-size: 150px;
+  }
+
+  .tio-typography .alphabet-pattern p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .tio-typography .mix-pattern p {
+    font-size: 18px;
+    padding-top: 0;
+  }
+
+  .tio-typography .black-text {
+    font-size: 20px;
+    padding-top: 0;
+  }
+
+  .tio-typography .bold-text {
+    font-size: 20px;
+  }
+
+  .tio-typography .medium-text {
+    font-size: 20px;
+  }
+
+  .tio-typography .regular-text {
+    font-size: 20px;
+  }
+
+  .tio-low-fid-wireframe .marginSpace {
+    margin-top: 45px;
+  }
+
+  .tio-mid-fid-wireframe .text-16 br {
+    display: none;
+  }
+
+  .tio-mid-fid-wireframe .marginSpace {
+    margin-top: 45px;
+  }
+
+  .line-box {
+    display: none;
+  }
+
+  .tio-high-fid-wireframe .content-box .text-16 {
+    font-size: 14px;
+  }
+
+  .tio-high-fid-wireframe .content-box .text-16 br {
+    display: none;
+  }
+
+  .tio-high-fid-wireframe .content-box {
+    padding: 20px;
+  }
+
+  .tio-thankyou .box {
+    height: 250px;
+  }
+
+  /* smartFarm case study */
+
+  .smart-delivery .heading {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .smart-challenges .box {
+    padding: 25px;
+  }
+
+  .smart-challenges .box .text-16 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .smart-design-pipeline .sub-heading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .smart-design-pipeline .sub-heading br {
+    display: none;
+  }
+
+  .smart-design-pipeline .box .heading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .smart-design-pipeline ul li {
     font-size: 12px;
+    line-height: 20px;
+  }
+
+  .smart-discover .head {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .smart-discover .head br {
+    display: none;
+  }
+
+  .smart-discover .marginSpace {
+    margin-top: 45px;
+  }
+
+  .smart-discover .sub-heading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .smart-discover .smart-box img {
+    width: 150px;
+  }
+
+  .smart-discover .circle img {
+    width: 150px;
+  }
+
+  .smart-define .marginSpace {
+    margin-top: 100px;
+  }
+
+  .smart-user-persona .head {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .smart-user-persona .head br {
+    display: none;
+  }
+
+  .smart-ideate .head {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .smart-solution .head {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .smart-low-fidelity .head {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .smart-low-fidelity .head br {
+    display: none;
+  }
+
+  .smart-mid-fidelity .half-circle img {
+    width: 150px;
+  }
+
+  .smart-mid-fidelity .head {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .smart-visual-design {
+    height: 100%;
+  }
+
+  .smart-visual-design .box img {
+    height: 100%;
+    width: 60%;
+  }
+
+  .smart-visual-design .content-box {
+    margin-top: 0%;
+  }
+
+  .smart-visual-design .head {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .smart-high-fidelity .head {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .smart-high-fidelity .content-box .content {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .smart-high-fidelity .content--box .content {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .smart-solution .num {
+    font-size: 70px;
+  }
+
+  .smart-solution .content .head {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 50px;
+  }
+
+  .smart-solution .content .head br {
+    display: none;
+  }
+
+  .smart-solution .arrow-img {
+    display: none;
+  }
+
+  .smart-solution .arrow-img2 {
+    display: none;
+  }
+
+  .smart-project-impact .xs-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .smart-project-impact .box .num {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .smart-low-fidelity .half-circle {
+    display: none;
+  }
+
+  .smart-thank-you .head {
+    font-size: 60px;
+    line-height: 80px;
   }
 }
 
@@ -752,5 +1961,212 @@
     flex: 0 0 75%;
   }
 
-  /*  */
+  /* contact us */
+
+  .contact-info .contact-box {
+    margin-bottom: 40px;
+  }
+
+  .contact-info .contact-box .sub-heading {
+    font-size: 22px;
+  }
+
+  /* konnect case study */
+
+  .banner {
+    height: 550px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .sub-heading {
+    font-size: 20px;
+  }
+
+  .konnect-app .text br {
+    display: none;
+  }
+
+  .konnect-app .image1 img {
+    width: 80px;
+  }
+
+  .konnect-app .image2 img {
+    width: 80px;
+  }
+
+  .konnect_brief .goals_Box .text {
+    padding: 0 5px;
+  }
+
+  .konnect-design-system .design-system-image3 img {
+    width: 80px;
+  }
+
+  .konnect-icon .icon-image1 img {
+    width: 50px;
+  }
+
+  .konnect-icon .icon-image7 img {
+    width: 50px;
+  }
+
+  .konnect-key-screens .key-screens-icon1 img {
+    width: 50px;
+  }
+
+  .konnect-key-screens .key-box {
+    padding: 45px 20px;
+  }
+
+  .konnect-reminder .key-box {
+    padding: 30px 20px;
+  }
+
+  .konnect-reminder .key-box .text br {
+    display: none;
+  }
+
+  .thank-you-image1 img {
+    width: 80px;
+  }
+
+  .thank-you-image2 img {
+    width: 50px;
+  }
+
+  /* tio case study */
+
+  .banner.tio-banner {
+    height: 600px;
+  }
+
+  .banner.tio-banner .banner-img {
+    min-width: 550px;
+    top: -70px;
+  }
+
+  .banner.tio-banner .box {
+    margin-top: 0;
+    margin-left: 10%;
+  }
+
+  .banner.tio-banner .box .head {
+    font-size: 36px;
+  }
+
+  .banner.tio-banner .header-icons {
+    margin-left: 10%;
+  }
+
+  .tio-objective .text-16 br {
+    display: none;
+  }
+
+  .tio-persona .persona-box {
+    padding: 10px;
+  }
+
+  .tio-typography .typography-right-section h2 {
+    font-size: 200px;
+  }
+
+  .tio-low-fid-wireframe .text-16 br {
+    display: none;
+  }
+
+  .tio-mid-fid-wireframe .text-16 br {
+    display: none;
+  }
+
+  .tio-high-fid-wireframe .content-box .text-16 br {
+    display: none;
+  }
+
+  .line-box {
+    display: none;
+  }
+
+  /* smartFarm case study */
+
+  .smart-discover .head br {
+    display: none;
+  }
+
+  .smart-discover .sub-heading {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .smart-user-persona .head br {
+    display: none;
+  }
+
+  .smart-low-fidelity .head br {
+    display: none;
+  }
+
+  .smart-low-fidelity .half-circle img {
+    width: 100px;
+  }
+
+  .smart-mid-fidelity .half-circle img {
+    width: 200px;
+  }
+
+  .smart-solution .content .head {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .smart-solution .content .head br {
+    display: none;
+  }
+
+  .smart-solution .arrow-img {
+    display: none;
+  }
+
+  .smart-solution .arrow-img2 {
+    display: none;
+  }
+
+  .smart-solution .num {
+    font-size: 60px;
+  }
+
+  .smart-visual-design {
+    height: 100%;
+  }
+
+  .smart-visual-design .box img {
+    width: 65%;
+    height: 100%;
+  }
+
+  .smart-visual-design .content-box {
+    margin-top: 10%;
+  }
+
+  .smart-high-fidelity .content-box .content {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .smart-high-fidelity .content--box .content {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .smart-project-impact .xs-text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .smart-thank-you .head {
+    font-size: 70px;
+    line-height: 80px;
+  }
 }
