@@ -384,7 +384,7 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
 }
 
 .our-timeline .text {
-  margin-bottom: 54px;
+  margin-bottom: 35px;
 }
 
 .our-timeline .timelineBox {
@@ -423,6 +423,10 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
 
 .our-timeline .timelineBox .text {
   text-align: center;
+}
+
+.our-timeline .timelineBox .text.a {
+  margin-top: 100px;
 }
 
 .our-timeline .dotted-line {
@@ -771,15 +775,21 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
   height: 542px;
   background-repeat: no-repeat;
   margin-top: -100px;
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
 }
 
 .thankyou .content {
   font-style: normal;
   font-weight: 600;
-  font-size: 144px;
+  font-size: 96px;
   line-height: 34px;
   color: #ffffff;
-  margin-top: 17%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*  */
@@ -787,6 +797,8 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
 .header-icons .iconBox {
   display: flex;
   margin-top: 40px;
+  width: 100%;
+  margin-right: 15px;
 }
 
 .header-icons .iconBox .icon {
@@ -814,6 +826,10 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
   font-size: 18px;
   line-height: 26px;
   color: #ffffff;
+}
+
+.header-icons .next-icon {
+  display: flex;
 }
 
 /* mega-menu */
@@ -1071,6 +1087,28 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
 /*  */
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .heading {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .banner {
+    height: 650px;
+  }
+
+  .banner-img {
+    top: 25px;
+    min-width: 600px;
+  }
+
+  .banner .sub-heading {
+    margin-bottom: 20px;
+  }
+
+  .banner .sub-heading br {
+    display: none;
+  }
+
   .our-timeline .dotted-line {
     width: 970px;
   }
@@ -1831,8 +1869,8 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
 
   .main-links__item {
     font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .main-links {

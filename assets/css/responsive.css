@@ -14,7 +14,7 @@
   }
 
   .heading {
-    font-weight: normal;
+    font-weight: 900;
     font-size: 22px;
     line-height: 30px;
   }
@@ -114,6 +114,10 @@
 
   .our-process .main-heading {
     margin-bottom: 10px;
+  }
+
+  .our-process .main-heading br {
+    display: none;
   }
 
   /* discover-and-explore */
@@ -366,6 +370,11 @@
   }
 
   /* work */
+
+  .our-process.work-process {
+    padding: 40px 0;
+  }
+
   .work {
     padding-bottom: 40px;
   }
@@ -469,6 +478,8 @@
 
   .main-links a {
     margin-top: 24px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .desktop-menu__blackbg .desktop-menu__item .bg-bl-hd {
@@ -499,6 +510,12 @@
 
   /* contact-us */
 
+  .contact-info .head {
+    padding-right: 0;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
   .contact-info .contact-box {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -506,8 +523,53 @@
 
   .contact-info .contact-box .sub-heading {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .contact-info .form-template {
+    padding: 10px;
+  }
+
+  .contact-info {
+    margin-bottom: 20px;
+  }
+
+  .iti--allow-dropdown input,
+  .iti--allow-dropdown input[type="text"],
+  .iti--allow-dropdown input[type="tel"],
+  .iti--separate-dial-code input,
+  .iti--separate-dial-code input[type="text"],
+  .iti--separate-dial-code input[type="tel"] {
+    padding-left: 80px !important;
+  }
+
+  .form-contact-control {
+    margin: 10px 0;
+  }
+
+  .footer-icons-img {
+    display: none;
+  }
+
+  .contact-main .footer-box {
+    text-align: left;
+  }
+
+  .footer-main.contact-main .footer-policy-box {
+    justify-content: flex-start;
+  }
+
+  .footer-main .space-box {
+    padding-left: 0;
+  }
+
+  .footer-main.contact-main .space-box {
+    padding-left: 0;
+  }
+
+  .footer-main.contact-main .right-contact {
+    padding-left: 0;
   }
 
   /* konnect case study */
@@ -863,7 +925,7 @@
   }
 
   .banner.tio-banner .box {
-    margin-top: 0px;
+    margin-top: 20px;
   }
 
   .banner.tio-banner .banner-img {
@@ -1022,6 +1084,36 @@
 
   /* smartFarm case study */
 
+  .banner.smartfarm-banner .box {
+    margin-top: 0;
+  }
+
+  .banner.smartfarm-banner .box .head {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .banner.smartfarm-banner .box .content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 15px;
+  }
+
+  .banner.smartfarm-banner .box .content br {
+    display: none;
+  }
+
+  .banner--img {
+    width: 25%;
+    top: 15%;
+  }
+
+  .banner.smartfarm-banner .header-icons .iconBox {
+    margin-top: 15px;
+  }
+
   .smart-objective .heading br {
     display: none;
   }
@@ -1061,7 +1153,7 @@
     margin-top: 20px;
   }
 
-  .smart-design-pipeline .sub-heading{
+  .smart-design-pipeline .sub-heading {
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
@@ -1311,21 +1403,111 @@
     margin-bottom: 25px;
   }
 
-  .smart-project-impact .impact--box::before{
+  .smart-project-impact .impact--box::before {
     display: none;
   }
 
-  .smart-project-impact .impact--box{
+  .smart-project-impact .impact--box {
     margin-left: 0;
   }
 
-  .smart-project-impact .content--box{
+  .smart-project-impact .content--box {
     display: block;
   }
 
   .smart-thank-you .head {
     font-size: 32px;
     line-height: 40px;
+  }
+
+  /* blog detail page */
+
+  .blog-detail-banner {
+    height: 200px;
+  }
+
+  .detail-segment h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .detail-segment .b-img {
+    display: block;
+  }
+
+  .detail-segment .b-img .new-social-links {
+    margin-bottom: 24px;
+  }
+
+  .detail-segment p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .detail-segment h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .detail-segment ul li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .blog-para img {
+    margin: 20px 0;
+  }
+
+  /* homepage */
+
+  .homepage-problem-solver .heading {
+    padding: 0;
+  }
+
+  .homepage-problem-solver .sm-text {
+    padding: 0;
+  }
+
+  .homepage-problem-solver .box iframe {
+    height: 215px;
+    width: 100%;
+  }
+
+  .homepage-projects .sm-text {
+    margin-bottom: 40px;
+  }
+
+  .homepage-impactful .heading {
+    padding: 0;
+  }
+
+  .homepage-impactful a {
+    padding: 10px 15px;
+  }
+
+  .homepage-acheivements .sm-text {
+    margin-bottom: 40px;
+  }
+
+  .homepage-acheivements .box .content {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .homepage-acheivements .box {
+    padding: 10px;
+  }
+
+  .homepage-acheivements .head-space{
+    margin-top: 0;
+  }
+
+  .blogs.homepage-blogs .blog-box {
+    margin-top: 40px;
+  }
+
+  .blogs.homepage-blogs .blog-box .content .date{
+    margin-bottom: 0;
   }
 }
 
@@ -1495,6 +1677,13 @@
 
   /* contact-us */
 
+  .contact-info .head {
+    padding-right: 0;
+    font-size: 34px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+
   .contact-info .contact-box {
     margin-bottom: 40px;
   }
@@ -1508,11 +1697,40 @@
     line-height: 24px;
   }
 
+  .contact-info .form-template {
+    padding: 20px;
+  }
+
+  .form-contact-control::placeholder {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .form-contact-control {
+    margin: 10px 0;
+  }
+
+  .footer-main.contact-main .right-contact .footer-box a {
+    margin-right: 10px;
+  }
+
+  .contact-info {
+    margin-bottom: -20px;
+  }
+
+  .footer-main.contact-main .space-box {
+    padding-left: 15%;
+  }
+
+  .footer-main.contact-main .right-contact {
+    padding-left: 10%;
+  }
+
   /* konnect */
 
-  .banner {
+  /* .banner {
     height: 550px;
-  }
+  } */
 
   .text {
     font-size: 16px;
@@ -1585,17 +1803,11 @@
   /* tio case study */
 
   .banner.tio-banner {
-    height: 440px;
-  }
-
-  .banner.tio-banner .banner-img {
-    min-width: 400px;
-    right: -20px;
-    top: -70px;
+    overflow-x: hidden;
   }
 
   .banner.tio-banner .box {
-    margin-top: 0;
+    margin-top: 0px;
   }
 
   .banner.tio-banner .box .head {
@@ -1700,6 +1912,34 @@
   }
 
   /* smartFarm case study */
+
+  .banner.smartfarm-banner .box {
+    margin-top: 0;
+  }
+
+  .banner.smartfarm-banner .box .head {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .banner.smartfarm-banner .box .content {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+
+  .banner.smartfarm-banner .header-icons .iconBox {
+    margin-top: 20px;
+  }
+
+  .smart-objective .text-16 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .smart-objective .text-16 br {
+    display: none;
+  }
 
   .smart-delivery .heading {
     font-size: 28px;
@@ -1876,6 +2116,60 @@
     font-size: 60px;
     line-height: 80px;
   }
+
+  /* blog detail page */
+
+  .detail-segment h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .detail-segment h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .detail-segment p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .detail-segment ul li {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  /* Homepage */
+
+  .homepage-problem-solver .heading{
+    padding: 0 10%;
+  }
+
+  .homepage-problem-solver .sm-text{
+    padding: 0 10%;
+  }
+
+  .homepage-problem-solver .box{
+    margin-top: 40px;
+  }
+
+  .homepage-impactful .text{
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .homepage-impactful a{
+    padding: 10px 15px;
+  }
+
+  .homepage-acheivements .box{
+    padding: 5px;
+  }
+
+  .homepage-acheivements .box .content{
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1897,6 +2191,26 @@
 
   .form-control::placeholder {
     font-size: 16px;
+  }
+
+  /* contact us */
+
+  .footer-main.contact-main .right-contact .footer-box a {
+    margin-right: 10px;
+  }
+
+  .contact-info {
+    margin-bottom: -25px;
+  }
+
+  .contact-info .form-template {
+    padding: 30px 48px;
+  }
+
+  .contact-info .head {
+    padding-right: 0;
+    font-size: 42px;
+    line-height: 60px;
   }
 
   /* sprint-roadmap */
@@ -2039,15 +2353,6 @@
 
   /* tio case study */
 
-  .banner.tio-banner {
-    height: 600px;
-  }
-
-  .banner.tio-banner .banner-img {
-    min-width: 550px;
-    top: -70px;
-  }
-
   .banner.tio-banner .box {
     margin-top: 0;
     margin-left: 10%;
@@ -2090,6 +2395,25 @@
   }
 
   /* smartFarm case study */
+
+  .banner.smartfarm-banner .box {
+    margin-top: 0;
+  }
+
+  .banner.smartfarm-banner .box .head {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .banner.smartfarm-banner .box .content {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 20px;
+  }
+
+  .banner.smartfarm-banner .header-icons .iconBox {
+    margin-top: 20px;
+  }
 
   .smart-discover .head br {
     display: none;
@@ -2168,5 +2492,27 @@
   .smart-thank-you .head {
     font-size: 70px;
     line-height: 80px;
+  }
+
+  /* Homepage */
+
+  .homepage-problem-solver .heading{
+    padding: 0 10%;
+  }
+
+  .homepage-problem-solver .sm-text{
+    padding: 0 10%;
+  }
+
+  .homepage-impactful .heading{
+    padding-left: 20px;
+  }
+
+  .homepage-acheivements .box{
+    padding: 5px;
+  }
+
+  .iti--allow-dropdown input, .iti--allow-dropdown input[type="text"], .iti--allow-dropdown input[type="tel"], .iti--separate-dial-code input, .iti--separate-dial-code input[type="text"], .iti--separate-dial-code input[type="tel"]{
+    padding-left: 80px !important;
   }
 }

@@ -616,6 +616,10 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
   background-image: url("../img/thankyou1.png");
   background-repeat: no-repeat;
   margin-top: -100px;
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
+  height: 540px;
 }
 
 .thankyou .content {
@@ -623,7 +627,10 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
   font-size: 96px;
   line-height: 34px;
   color: #ffffff;
-  margin-top: 14%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* mega-menu */
@@ -877,7 +884,6 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
 .hvr-m a:hover:before {
   width: 100%;
 }
-
 
 /*  */
 
@@ -1163,7 +1169,8 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
     padding-top: 0;
   }
 
-  .the-mega-btn.active .l1, .the-mega-btn.active .l2{
+  .the-mega-btn.active .l1,
+  .the-mega-btn.active .l2 {
     background-color: #fff;
   }
 
@@ -1555,6 +1562,8 @@ header .navbar-nav .nav-item:hover .hvr-line::after {
 
   .main-links a {
     margin-top: 24px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .desktop-menu__blackbg .desktop-menu__item .bg-bl-hd {
